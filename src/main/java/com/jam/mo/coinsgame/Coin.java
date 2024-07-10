@@ -9,11 +9,7 @@ import javafx.scene.text.Text;
 public class Coin extends StackPane {
     public Coin(int number, double radius) {
         Circle circle = new Circle(radius);
-//        circle.setStyle(" -fx-fill: linear-gradient(#c4613d, #963e1e, #c4613d)");
         circle.setStyle(" -fx-fill: black");
-//        circle.setStroke(Color.BROWN);
-//        circle.setStrokeType(javafx.scene.shape.StrokeType.INSIDE);
-
         Text text = new Text(String.valueOf(number));
         text.setFont(Font.font("Arial", radius/1.5));
         text.setFill(Color.valueOf("#ddd"));
