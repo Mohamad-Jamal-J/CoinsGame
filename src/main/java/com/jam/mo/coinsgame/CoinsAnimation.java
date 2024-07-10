@@ -79,9 +79,6 @@ public class CoinsAnimation {
         mainBox.getChildren().addAll(container, controlsContainer, feedbackContainer);
 
         root = new StackPane(welcome, leftArrowView, mainBox, resultAnnouncement, rightArrowView);
-//        root.setStyle("-fx-background-color: linear-gradient(to right, #143e98, #2658d3);");
-//        root.setStyle("-fx-background-color: #1d1716;");
-//        root.setStyle("-fx-background-color: #14110F;");
         root.setStyle("-fx-background-color: #e8e8e8;");
         StackPane.setAlignment(welcome, Pos.TOP_CENTER);
         StackPane.setAlignment(mainBox, Pos.CENTER);
@@ -102,7 +99,6 @@ public class CoinsAnimation {
         rightArrowView = new ImageView(rightArrowImage);
         leftArrowView = new ImageView(leftArrowImage);
         playerOneView = new ImageView(playerImage);
-//        playerOneView.setRotate(180);
         playerTwoView = new ImageView(playerImage);
     }
 
@@ -120,14 +116,11 @@ public class CoinsAnimation {
         Line divider1 = new Line(0, 0, mainBox.getMaxWidth(), 0);
 
         VBox conty = new VBox(25);
-//        divider1.setStyle("-fx-stroke: #a55233;  -fx-stroke-width: 2px");
-//        divider1.setStyle("-fx-stroke: #34312D;  -fx-stroke-width: 2px");
         divider1.setStyle("-fx-stroke: #525252;  -fx-stroke-width: 2px");
         coinsBox = new HBox(5);
         coinsBox.setAlignment(Pos.CENTER);
         initializeHBox(coinsBox);
         Line divider2 = new Line(0, 0, mainBox.getMaxWidth(), 0);
-//        divider2.setStyle("-fx-stroke: #a55233; -fx-stroke-width: 2px");
         divider2.setStyle("-fx-stroke: #525252; -fx-stroke-width: 2px");
         conty.getChildren().addAll(divider1, coinsBox, divider2);
         playerTwoCoins = new Label("Player 2");
@@ -149,8 +142,6 @@ public class CoinsAnimation {
         });
 
         reset = new Button("Reset");
-//        reset.setStyle("-fx-background-color: #38302e");
-//        reset.setStyle("-fx-background-color: #7E7F83; -fx-text-fill: #f3bc77");
         reset.setStyle("-fx-background-color: #b7b7b7; -fx-text-fill: #e8e8e8");
 
         reset.setOnAction(event -> {
@@ -167,7 +158,6 @@ public class CoinsAnimation {
         });
 
         manualButton = new Button("Play Manually");
-//        manualButton.setStyle("-fx-background-color: #402a23");
         manualButton.setStyle("-fx-background-color: #8c8c8c; -fx-text-fill: #e8e8e8");
 
         manualButton.setOnMouseEntered(e -> {
@@ -188,8 +178,6 @@ public class CoinsAnimation {
     }
     private static VBox getLogsContainer() {
         VBox logsContainer = new VBox(4);
-//        logsContainer.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #402a23");
-//        logsContainer.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #7E7F83");
         logsContainer.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #000000");
 
         logsContainer.setPrefSize(400, 134);
@@ -200,8 +188,6 @@ public class CoinsAnimation {
 
 
         Line divider = new Line(0, 0, 390, 0);
-//        divider.setStyle("-fx-stroke: #7c3d25;");
-//        divider.setStyle("-fx-stroke: #34312D;");
         divider.setStyle("-fx-stroke: #525252;");
 
         logsContainer.getChildren().addAll(movesLogLabel, divider);
@@ -223,8 +209,6 @@ public class CoinsAnimation {
         GridPane resultsGrid = new GridPane();
         resultsGrid.setAlignment(Pos.CENTER);
         resultsGrid.setPrefSize(269, 134);
-//        resultsGrid.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #402a23");
-//        resultsGrid.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #7E7F83");
         resultsGrid.setStyle("-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #000000");
 
         // Column constraints
