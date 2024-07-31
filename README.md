@@ -1,5 +1,4 @@
 # Coins Pick Algorithm (Java Application)
-
 Welcome to the Coins Pick Game! This Java application implements a dynamic programming approach for a coin-picking game with interactive animation.
 The goal of this algorithm is to ensure that player 1 gets the optimal sum of coins in order to win the game, or in worst-case scenario, a draw (but never a loss).
 
